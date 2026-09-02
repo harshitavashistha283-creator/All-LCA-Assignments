@@ -1,1 +1,22 @@
-
+students_list = ["Riyansh","Arpit","Harshit"]
+print("Original list -", students_list )
+students_list.append("Yash")
+students_list[1] = "Harshita"
+students_list.remove("Harshit")           
+print("New List -",students_list )
+students_tuple = ("Riyansh", "Arpit","Harshit")
+print("Original Tuple-",students_tuple )
+students_tuple = students_tuple + ("Yash",)
+change_tuple = list(students_tuple)
+change_tuple[1] = "Harshit"
+students_tuple = tuple(change_tuple)
+temp_tuple = list(students_tuple)
+temp_tuple.remove("Harshit")
+students_tuple = tuple(temp_tuple)
+print("New Tuple-",students_tuple)
+students_dict = {1:"Riyansh",2:"Arpit",3:"Harshit"}
+print("Original Dictionary-",students_dict)
+students_dict[4] = "Yash"
+students_dict[2] = "Harshita"
+del students_dict[3]
+print("New Dictionary-",students_dict)
